@@ -6,8 +6,8 @@ import { Alert, Button, Platform, Text, View } from "react-native";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
-    shouldPlaySound: false,
-    shouldSetBadge: false,
+    shouldPlaySound: true,
+    shouldSetBadge: true,
     shouldShowBanner: true,
     shouldShowList: true,
   }),
@@ -89,6 +89,8 @@ async function schedulePushNotification() {
       title: "You've got mail! Hello World! 📬",
       body: "Here is the notification body",
       data: { data: "goes here", test: { test1: "more data" } },
+      sound: "default",
+      badge: 1,
     },
     trigger: {
       type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL,

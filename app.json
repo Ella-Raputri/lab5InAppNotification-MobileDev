@@ -50,6 +50,11 @@
       "eas": {
         "projectId": "bfb8525b-e7c4-461d-9287-02957bae86ae"
       }
+    },
+    "notification": {
+      "icon": "./assets/images/react-logo.png",
+      "color": "#ffffff",
+      "androidMode": "default"
     }
   }
 }
